@@ -1,9 +1,14 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
     <div>
-        <TheNavBar />
-        <slot />
+
     </div>
 </template>
+
+
 
 <style scoped>
 </style>
