@@ -8,11 +8,5 @@ export default defineNuxtConfig(
       shim: false,
     },
     srcDir: './src',
-    alias: {
-      '@': resolve(
-        __dirname,
-        'src',
-      ),
-    },
   },
 );
