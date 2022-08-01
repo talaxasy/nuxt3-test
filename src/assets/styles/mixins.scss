@@ -1,0 +1,40 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin respond-to($size) {
+    @if $size == xl {
+        @media only screen and (min-width: 1280px) {
+            @content;
+        }
+    }
+
+    @if $size == lg {
+        @media only screen and (max-width: 1280px) {
+            @content;
+        }
+    }
+
+    @if $size == sm {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $size == xs {
+        @media only screen and (max-width: 320px) {
+            @content;
+        }
+    }
+}
