@@ -6,5 +6,6 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="scss">
+@import 'assets/styles/main.scss';
 </style>
