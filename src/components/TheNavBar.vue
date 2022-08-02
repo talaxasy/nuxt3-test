@@ -19,25 +19,41 @@
                     <li class="nav-item">
                         <NuxtLink :active-class="'active'" class="nav-link" to="/about">About</NuxtLink>
                     </li>
+                    <li class="nav-item">
+                        <NuxtLink :active-class="'active'" class="nav-link" to="/blog">Blog</NuxtLink>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Dropdown
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <ul class="dropdown-menu dropdown-menu-dark ">
+
+                            <li>
+                                <NuxtLink :active-class="'active'" class="nav-link" to="/custom/article1">Custom Article
+                                    1
+                                </NuxtLink>
+                            </li>
+                            <li>
+                                <NuxtLink :active-class="'active'" class="nav-link" to="/custom/article2">Custom Article
+                                    2
+                                </NuxtLink>
+                            </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <NuxtLink :active-class="'active'" class="nav-link" to="/custom/article3">Custom Article
+                                    3
+                                </NuxtLink>
+                            </li>
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <div class="d-flex">
                     <input class="form-control  me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                </div>
             </div>
         </div>
     </nav>

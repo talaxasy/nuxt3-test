@@ -1,5 +1,5 @@
 <script setup>
-definePageMeta({
+useHead({
     title: 'About page',
 })
 </script>
