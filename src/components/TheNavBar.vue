@@ -22,6 +22,9 @@
                     <li class="nav-item">
                         <NuxtLink :active-class="'active'" class="nav-link" to="/blog">Blog</NuxtLink>
                     </li>
+                    <li class="nav-item">
+                        <NuxtLink :active-class="'active'" class="nav-link" to="/form">Test form</NuxtLink>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">

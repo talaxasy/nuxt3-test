@@ -3,22 +3,22 @@
 const page = useState('page', () => 1)
 
 
-const { data, pending, refresh } = await useFetch<any[]>('https://jsonplaceholder.typicode.com/posts', {
+const { data, pending, refresh } = await useAsyncData<any[]>(() => $fetch('https://jsonplaceholder.typicode.com/posts', {
     params: {
         _page: page.value,
         _limit: 10,
-    },
-});
+    }
+}));
 
-// watch(page, () => {
-//     refresh();
-// })
+watch(page, () => {
+    refresh();
+})
 
 </script>
 
 <template>
     <div>
-        <!-- <button @click="page++">{{ page }}</button> -->
+        <button @click="page++">{{ page }}</button>
         <div v-if="pending" class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
