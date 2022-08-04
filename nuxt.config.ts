@@ -9,6 +9,15 @@ export default defineNuxtConfig(
         'composables/**',
       ],
     },
+    components: {
+      dirs: [
+        {
+          // Make auto-import of components from /common folder without 'common' prefix
+          path: '~/components/common',
+        },
+        '~/components',
+      ],
+    },
     meta: {
       link: [
         {

@@ -1,8 +1,8 @@
-<!-- <script lang="ts">
+<script lang="ts">
 export default {
     name: 'MyInput',
 }
-</script> -->
+</script>
 
 <script setup lang="ts">
 defineProps<{

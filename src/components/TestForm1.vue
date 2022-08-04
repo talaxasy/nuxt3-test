@@ -1,7 +1,4 @@
 <script setup lang="ts">
-// import MyInput from "./Common/MyInput.vue";
-import MyTextarea from "./Common/MyTextarea.vue";
-
 const emit = defineEmits<{
     (e: 'create', post: { name: string, firstName: string, lastName: string, age: number, companyName: string, aboutYou: string }): void
 }>();
@@ -37,10 +34,10 @@ const createPost = () => {
 <template>
     <form class="form" @submit.prevent="createPost">
         <h1>Create post</h1>
-        <common-my-input required v-model="state.name" type="text" placeholder="Name" />
-        <common-my-input required v-model="state.firstName" type="text" placeholder="First Name" />
-        <common-my-input required v-model="state.lastName" type="text" placeholder="Last Name" />
-        <common-my-input required v-model="state.age" type="number" placeholder="Age" />
+        <MyInput required v-model="state.name" type="text" placeholder="Name" />
+        <MyInput required v-model="state.firstName" type="text" placeholder="First Name" />
+        <MyInput required v-model="state.lastName" type="text" placeholder="Last Name" />
+        <MyInput required v-model="state.age" type="number" placeholder="Age" />
         <MyTextarea required v-model="state.aboutYou" type="text" placeholder="About You" />
 
         <button type="submit">Create</button>
