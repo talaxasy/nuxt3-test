@@ -1,7 +1,10 @@
 <script setup lang="ts">
 const route = useRoute();
 
-const { data, pending, error } = await useFetch<any>(`https://jsonplaceholder.typicode.com/posts/${route.params.id}`, { key: route.params.id.toString() });
+const { data, pending, error } = await useLazyFetch<any>(`https://jsonplaceholder.typicode.com/posts/${route.params.id}`, { key: route.params.id.toString() });
+
+
+
 
 
 </script>

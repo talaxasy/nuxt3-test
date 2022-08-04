@@ -35,7 +35,7 @@ const createPost = () => {
     <form class="form" @submit.prevent="createPost">
         <h1>Create post</h1>
         <MyInput required v-model="state.name" type="text" placeholder="Name" />
-        <MyInput required v-model="state.firstName" type="text" placeholder="First Name" />
+        <MyInput v-focus required v-model="state.firstName" type="text" placeholder="First Name" />
         <MyInput required v-model="state.lastName" type="text" placeholder="Last Name" />
         <MyInput required v-model="state.age" type="number" placeholder="Age" />
         <MyTextarea required v-model="state.aboutYou" type="text" placeholder="About You" />
