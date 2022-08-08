@@ -4,6 +4,10 @@ useHead({
     title: 'Main page',
 })
 
+const config = useRuntimeConfig();
+console.log(config.public.apiSecret1 + '😒');
+
+
 </script>
 
 
